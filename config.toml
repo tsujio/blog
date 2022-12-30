@@ -6,6 +6,8 @@ copyright = "&copy; [辻尾研](https://www.tsujio.org)"
 
 theme = "PaperMod"
 
+googleAnalytics = "G-JC03961VJV"
+
 [Params]
   title = "研究会"
 
