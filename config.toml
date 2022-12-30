@@ -1,3 +1,74 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = 'https://blog.tsujio.org/'
+languageCode = 'ja-jp'
+title = '研究会'
+
+copyright = "&copy; [辻尾研](https://www.tsujio.org)"
+
+theme = "PaperMod"
+
+[Params]
+  title = "研究会"
+
+  author = "Naoki Tsujio"
+
+  DateFormat = "2006.01.02"
+
+  ShowShareButtons = true
+
+  ShowCodeCopyButtons = true
+
+  defaultTheme = "light"
+
+  disableThemeToggle = true
+
+  showtoc = true
+
+  tocopen = true
+
+  ShowPostNavLinks = true
+
+  ShowBreadCrumbs = true
+
+  [Params.HomeInfoParams]
+    Title = "Naoki Tsujio ![icon](/images/icon.png)"
+    Content = """
+Profile site : https://www.tsujio.org
+- フリーランスのエンジニアです。
+- 仕事に関することや趣味のことを書きます。
+"""
+
+  [[Params.SocialIcons]]
+    name = "tsujiolab"
+    url = "https://www.tsujio.org"
+
+  [[Params.SocialIcons]]
+    name = "twitter"
+    url = "https://twitter.com/ntsujio"
+
+  [[Params.SocialIcons]]
+    name = "github"
+    url = "https://github.com/tsujio"
+
+[menu]
+  [[menu.main]]
+    identifier = "archive"
+    name = "Archive"
+    url = "/archives"
+
+  [[menu.main]]
+    identifier = "search"
+    name = "Search"
+    url = "/search"
+
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags"
+
+  [[menu.main]]
+    identifier = "tsujiolab"
+    name = "Tsujio Lab"
+    url = "https://www.tsujio.org"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>フリーランス 2 年目の振り返り | 研究会</title>
+<meta name="keywords" content="">
+<meta name="description" content="はじめに 今年はフリーランスとしては 2 年目になる年でした。
+2 年目もなんとかフリーランスのエンジニアとしてやっていくことができたので、去年と同様にこの 1 年を振り返ってみようと思います。
+実績 今年は 5 社と契約し、5 つのプロジェクトに携わりました。
+5 社のうち 2 社は去年から引き続き契約していただいたクライアントで、残りの 3 社は今年新規に契約することになったクライアントでした。
+またその新規の 3 社のうちの 2 社は旧知の方からの紹介やオファーでした。
+仕事内容としてはデータエンジニアが主で、その他には開発コンサルのようなこともしました。
+仕事で新しく使ったツールやサービスは以下のようなものがありました。
+dbt Dataform Terraform trocco AirFlow Looker Looker Studio (旧 Google データポータル) Amazon QuickSight Firebase AWS Amplify Rust 売上は去年と比べると約 1.7 倍に増えました。
+また通算で 1 社あたりの平均契約月数は 10.6 カ月に増えました (去年は 7.3 カ月)。
+数字としては去年よりも良い方向に変化しており、仕事内容もやりたい方向の業務に携わることができたので満足のいく 2 年目になりました。
+具体的な業務内容 今年の主な仕事だったデータエンジニアと開発コンサルについて、具体的な内容を振り返ってみます。
+データエンジニア データエンジニアとしてはそれぞれ特徴の異なるいくつかの現場を経験しました。
+データ活用が盛んな組織での業務 まずは既にデータ活用が盛んな組織でデータエンジニア／データアーキテクトチームの一員として参加した現場でした。
+そこでは既に BigQuery を中心とした大規模なデータ基盤があり、データエンジニア／データアーキテクトや分析担当者がそれぞれ専任で多数在籍しており複数チームを組んでいるような組織でした。
+その現場では私は主に他社がリリースした新サービスや新機能を導入するための調査やプロトタイプの実装を担当しました。
+例えば Dataform や dbt の導入プロジェクトのための調査を行い、既存のクエリを移植するためのサンプルを実装してドキュメントを整備しました。また trocco を AirFlow のデータパイプラインに組み込むために API を調査し、AirFlow から trocco を使えるようにするカスタムオペレーターを実装したりもしました。">
+<meta name="author" content="Naoki Tsujio">
+<link rel="canonical" href="https://blog.tsujio.org/posts/2022-12-29/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.bccfefac377bc340f06c260aed1bddf49a4354816d7c570d6aac75a997986c95.css" integrity="sha256-vM/vrDd7w0DwbCYK7Rvd9JpDVIFtfFcNaqx1qZeYbJU=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://blog.tsujio.org/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://blog.tsujio.org/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://blog.tsujio.org/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://blog.tsujio.org/apple-touch-icon.png">
+<link rel="mask-icon" href="https://blog.tsujio.org/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://blog.tsujio.org/" accesskey="h" title="研究会 (Alt + H)">研究会</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://blog.tsujio.org/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://blog.tsujio.org/search" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://blog.tsujio.org/tags" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.tsujio.org" title="Tsujio Lab">
+                    <span>Tsujio Lab</span>&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://blog.tsujio.org/">Home</a>&nbsp;»&nbsp;<a href="https://blog.tsujio.org/posts/">Posts</a></div>
+    <h1 class="post-title">
+      フリーランス 2 年目の振り返り
+    </h1>
+    <div class="post-meta"><span title='2022-12-29 00:00:00 +0000 UTC'>2022.12.29</span>&nbsp;·&nbsp;Naoki Tsujio
+
+</div>
+  </header> <div class="toc">
+    <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#%e3%81%af%e3%81%98%e3%82%81%e3%81%ab" aria-label="はじめに">はじめに</a></li>
+                <li>
+                    <a href="#%e5%ae%9f%e7%b8%be" aria-label="実績">実績</a></li>
+                <li>
+                    <a href="#%e5%85%b7%e4%bd%93%e7%9a%84%e3%81%aa%e6%a5%ad%e5%8b%99%e5%86%85%e5%ae%b9" aria-label="具体的な業務内容">具体的な業務内容</a><ul>
+                        
+                <li>
+                    <a href="#%e3%83%87%e3%83%bc%e3%82%bf%e3%82%a8%e3%83%b3%e3%82%b8%e3%83%8b%e3%82%a2" aria-label="データエンジニア">データエンジニア</a><ul>
+                        
+                <li>
+                    <a href="#%e3%83%87%e3%83%bc%e3%82%bf%e6%b4%bb%e7%94%a8%e3%81%8c%e7%9b%9b%e3%82%93%e3%81%aa%e7%b5%84%e7%b9%94%e3%81%a7%e3%81%ae%e6%a5%ad%e5%8b%99" aria-label="データ活用が盛んな組織での業務">データ活用が盛んな組織での業務</a></li>
+                <li>
+                    <a href="#%e3%83%87%e3%83%bc%e3%82%bf%e6%b4%bb%e7%94%a8%e6%96%87%e5%8c%96%e3%81%ae%e3%81%aa%e3%81%84%e7%b5%84%e7%b9%94%e3%81%a7%e3%81%ae%e6%a5%ad%e5%8b%99" aria-label="データ活用文化のない組織での業務">データ活用文化のない組織での業務</a></li>
+                <li>
+                    <a href="#%e3%83%87%e3%83%bc%e3%82%bf%e6%b4%bb%e7%94%a8%e6%96%87%e5%8c%96%e3%81%ae%e3%81%aa%e3%81%84%e3%82%b9%e3%82%bf%e3%83%bc%e3%83%88%e3%82%a2%e3%83%83%e3%83%97%e3%81%a7%e3%81%ae%e6%a5%ad%e5%8b%99" aria-label="データ活用文化のないスタートアップでの業務">データ活用文化のないスタートアップでの業務</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e9%96%8b%e7%99%ba%e3%82%b3%e3%83%b3%e3%82%b5%e3%83%ab" aria-label="開発コンサル">開発コンサル</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e8%a9%95%e4%be%a1" aria-label="評価">評価</a></li>
+                <li>
+                    <a href="#%e3%81%93%e3%82%8c%e3%81%8b%e3%82%89" aria-label="これから">これから</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="はじめに">はじめに<a hidden class="anchor" aria-hidden="true" href="#はじめに">#</a></h1>
+<p>今年はフリーランスとしては 2 年目になる年でした。</p>
+<p>2 年目もなんとかフリーランスのエンジニアとしてやっていくことができたので、去年と同様にこの 1 年を振り返ってみようと思います。</p>
+<h1 id="実績">実績<a hidden class="anchor" aria-hidden="true" href="#実績">#</a></h1>
+<p>今年は 5 社と契約し、5 つのプロジェクトに携わりました。</p>
+<p>5 社のうち 2 社は去年から引き続き契約していただいたクライアントで、残りの 3 社は今年新規に契約することになったクライアントでした。</p>
+<p>またその新規の 3 社のうちの 2 社は旧知の方からの紹介やオファーでした。</p>
+<p>仕事内容としてはデータエンジニアが主で、その他には開発コンサルのようなこともしました。</p>
+<p>仕事で新しく使ったツールやサービスは以下のようなものがありました。</p>
+<ul>
+<li>dbt</li>
+<li>Dataform</li>
+<li>Terraform</li>
+<li>trocco</li>
+<li>AirFlow</li>
+<li>Looker</li>
+<li>Looker Studio (旧 Google データポータル)</li>
+<li>Amazon QuickSight</li>
+<li>Firebase</li>
+<li>AWS Amplify</li>
+<li>Rust</li>
+</ul>
+<p>売上は去年と比べると約 1.7 倍に増えました。</p>
+<p>また通算で 1 社あたりの平均契約月数は 10.6 カ月に増えました (去年は 7.3 カ月)。</p>
+<p>数字としては去年よりも良い方向に変化しており、仕事内容もやりたい方向の業務に携わることができたので満足のいく 2 年目になりました。</p>
+<h1 id="具体的な業務内容">具体的な業務内容<a hidden class="anchor" aria-hidden="true" href="#具体的な業務内容">#</a></h1>
+<p>今年の主な仕事だったデータエンジニアと開発コンサルについて、具体的な内容を振り返ってみます。</p>
+<h2 id="データエンジニア">データエンジニア<a hidden class="anchor" aria-hidden="true" href="#データエンジニア">#</a></h2>
+<p>データエンジニアとしてはそれぞれ特徴の異なるいくつかの現場を経験しました。</p>
+<h3 id="データ活用が盛んな組織での業務">データ活用が盛んな組織での業務<a hidden class="anchor" aria-hidden="true" href="#データ活用が盛んな組織での業務">#</a></h3>
+<p>まずは既にデータ活用が盛んな組織でデータエンジニア／データアーキテクトチームの一員として参加した現場でした。</p>
+<p>そこでは既に BigQuery を中心とした大規模なデータ基盤があり、データエンジニア／データアーキテクトや分析担当者がそれぞれ専任で多数在籍しており複数チームを組んでいるような組織でした。</p>
+<p>その現場では私は主に他社がリリースした新サービスや新機能を導入するための調査やプロトタイプの実装を担当しました。</p>
+<p>例えば Dataform や dbt の導入プロジェクトのための調査を行い、既存のクエリを移植するためのサンプルを実装してドキュメントを整備しました。また trocco を AirFlow のデータパイプラインに組み込むために API を調査し、AirFlow から trocco を使えるようにするカスタムオペレーターを実装したりもしました。</p>
+<p>またチームはデータエンジニアのチームでしたが、メンバーの中には IT システムに強くない方もいらっしゃるので、システム的なトラブルや複雑なエラーが出たときに私が引き継いで問題を解消するといった役割を担うことも少なくありませんでした。</p>
+<p>チーム全体としてはデータマネジメントを意識してタスクを組んでいる印象で、この規模でデータ活用をしている組織ではデータマネジメントは今後ますます重要視されてくると感じました。</p>
+<h3 id="データ活用文化のない組織での業務">データ活用文化のない組織での業務<a hidden class="anchor" aria-hidden="true" href="#データ活用文化のない組織での業務">#</a></h3>
+<p>こちらは大きな組織でエンジニアも多数在籍しており自社サービスを展開しているものの、データを活かしたサービス開発はしていない現場でした。</p>
+<p>私は始めはデータエンジニアとしてではなく小回りの利くなんでも屋のような役割で参加したのですが、業務の流れでサービスのユーザーの行動を可視化する例を示すことになりました。</p>
+<p>その現場ではサービスを展開しているもののユーザーがどれくらいの頻度で使っているかが分からないという課題がありました。元々そういった分析をする方針であればアプリケーションに Google Analytics 等を組み込んでおくこともできますが、この場合はそういった仕組みは使っておらず、使えるのは基盤として使っている AWS のログだけでした。幸いにそのアプリケーションはユーザー認証に Cognito を使っており、Cognito は認証イベントを CloudTrail にログ出力するようになっていたのでそのログを Athena でクエリできるように整備し QuickSight でユーザーのログイン頻度やアクティブユーザー数等を可視化することができました。</p>
+<p>まだ始めの一歩ですが、こういったステップを続けてサービス作りにデータを活用する効果が社内に認められて、より活発にデータを活用する文化にできたらよいなと思った現場でした。</p>
+<h3 id="データ活用文化のないスタートアップでの業務">データ活用文化のないスタートアップでの業務<a hidden class="anchor" aria-hidden="true" href="#データ活用文化のないスタートアップでの業務">#</a></h3>
+<p>こちらでは自社サービスを展開しているスタートアップで、サービスの利用状況を把握するために役割を超えて幅広く手を動かした現場でした。</p>
+<p>私がチームに参加したちょうどその頃、サービスの状況を把握するためにウォッチするべき KPI を定める議論をしていたところでした。</p>
+<p>私もそのミーティングに参加し、幾度かの議論を経て定まったサービスの KPI を追えるダッシュボードを作り始めました。</p>
+<p>しかしその時点ではユーザーの行動を追える情報はサーバー側に存在しなかったので、まずは Google Analytics のコードをフロントエンドのコードに追加し、興味のあるイベントが起こったときにそれを補足できるようにしました。</p>
+<p>またバックエンドはマイクロサービスの作りになっており DB も個々に持っていたので、それらのデータを一つの BigQuery に集約するデータパイプラインも構築しました。</p>
+<p>他にもメール送信機能は外部サービスを使っていたりしたので、メールに関するログを外部サービスから取得して BigQuery に投入する仕組みも構築しました。</p>
+<p>そうして各所からのデータが集まるデータレイクが出来上がったので、それをデータ変換する仕組みを dbt で作り、ダッシュボードで可視化するためのパイプラインを整えました。</p>
+<p>ダッシュボードは Google データポータル (現 Looker Studio) を使って実現し、定めた KPI 以外にもそれに繋がる重要な指標を把握するチャートも用意して、サービス開発の定例で参照するという流れを確立しました。</p>
+<p>この現場では少人数のチームであり自分でプログラムに手を入れたりインフラを変更したりできる環境だったため、サービス作りにデータを活用する新たな流れを導入できたよい経験になりました。</p>
+<h2 id="開発コンサル">開発コンサル<a hidden class="anchor" aria-hidden="true" href="#開発コンサル">#</a></h2>
+<p>こちらは業務内容としては上とは変わって、サービス開発を技術的な点からサポートする役割をする現場でした。</p>
+<p>相手方は医療ドメインの専門家の方で、そのドメインをターゲットにした Web サービスを開発してリリースするために必要なサポートを提供するという仕事内容でした。</p>
+<p>始めはサービスのコアとなるある問題を解くためのプログラムがローカルにあるだけの状態で、その機能を Web で提供するのがひとまずの目標でした。</p>
+<p>私の役割としては Web アプリケーションとして仕上げるためのシステムアーキテクチャの提案、技術選定のアドバイス、ユーザーエクスペリエンスを意識したサービス利用フローの提案、それを開発するための開発プロジェクトの進め方の提案などでした。</p>
+<p>ここでは自分のコンピューターサイエンスのバックグラウンドや、新規サービスの構想から実装してリリースまでやり遂げた経験からできるサポートを提供する形でした。</p>
+<p>この案件は相手方はターゲットとなる事業ドメインの専門家であり当時から既に具体的なユーザーが見えていたものの、後はシステム化のノウハウだけが足りないという現場だったので、自分の提供できるものと非常にマッチした仕事でした。</p>
+<h1 id="評価">評価<a hidden class="anchor" aria-hidden="true" href="#評価">#</a></h1>
+<p>2 年目である今年は仕事内容としては自分の目指していきたい方向と合致したものばかりで楽しく仕事ができたのでよかったです。</p>
+<p>顧客からの評価もおおむね良く、長く契約していただけるケースが増えました。</p>
+<p>頂いたフィードバックとしては</p>
+<ul>
+<li>「あいまいな指示でもうまく要件を咀嚼してこなしてくれて助かる」</li>
+<li>「技術的なスキルが優れているので難しいタスクを任せやすい」</li>
+<li>「ドキュメントを丁寧にまとめてくれる」</li>
+</ul>
+<p>などがありました。</p>
+<p>また過去の私の仕事を評価していただいた方から頂いた案件が今年は二つあり、これもよい出来事でした。</p>
+<p>今後もこの調子で今の顧客を大切にしつつ、評価され続けるような仕事ぶりを維持していきたいと思います。</p>
+<h1 id="これから">これから<a hidden class="anchor" aria-hidden="true" href="#これから">#</a></h1>
+<p>今後も基本はデータエンジニアとして仕事を受けつつ、開発コンサルも求められればやっていく方針でいこうと思います。</p>
+<p>去年から継続してデータ活用の現場に触れてきた感触として、データ活用に積極的な組織ではデータマネジメントに注力していきつつあることが分かったので、そういった方面の知識や経験も積んでいこうと思います。</p>
+<p>特にデータの品質担保のためのテストの仕組み、幅広いメンバーのデータ理解のためのメタデータ管理、各種法規の遵守のためのセキュリティなどが直近の課題として捉えられている印象だったので、そういった方面でも仕事ができるように準備していきたいと思います。</p>
+<p>それでは 3 年目もどうぞよろしくお願いします。</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+<nav class="paginav">
+  <a class="next" href="https://blog.tsujio.org/posts/2021-12-27/">
+    <span class="title">Next »</span>
+    <br>
+    <span>フリーランスになって 1 年経ったので振り返り</span>
+  </a>
+</nav>
+
+
+<div class="share-buttons">
+    <a target="_blank" rel="noopener noreferrer" aria-label="share フリーランス 2 年目の振り返り on twitter"
+        href="https://twitter.com/intent/tweet/?text=%e3%83%95%e3%83%aa%e3%83%bc%e3%83%a9%e3%83%b3%e3%82%b9%202%20%e5%b9%b4%e7%9b%ae%e3%81%ae%e6%8c%af%e3%82%8a%e8%bf%94%e3%82%8a&amp;url=https%3a%2f%2fblog.tsujio.org%2fposts%2f2022-12-29%2f&amp;hashtags=">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-253.927,424.544c135.939,0 210.268,-112.643 210.268,-210.268c0,-3.218 0,-6.437 -0.153,-9.502c14.406,-10.421 26.973,-23.448 36.935,-38.314c-13.18,5.824 -27.433,9.809 -42.452,11.648c15.326,-9.196 26.973,-23.602 32.49,-40.92c-14.252,8.429 -30.038,14.56 -46.896,17.931c-13.487,-14.406 -32.644,-23.295 -53.946,-23.295c-40.767,0 -73.87,33.104 -73.87,73.87c0,5.824 0.613,11.494 1.992,16.858c-61.456,-3.065 -115.862,-32.49 -152.337,-77.241c-6.284,10.881 -9.962,23.601 -9.962,37.088c0,25.594 13.027,48.276 32.95,61.456c-12.107,-0.307 -23.448,-3.678 -33.41,-9.196l0,0.92c0,35.862 25.441,65.594 59.311,72.49c-6.13,1.686 -12.72,2.606 -19.464,2.606c-4.751,0 -9.348,-0.46 -13.946,-1.38c9.349,29.426 36.628,50.728 68.965,51.341c-25.287,19.771 -57.164,31.571 -91.8,31.571c-5.977,0 -11.801,-0.306 -17.625,-1.073c32.337,21.15 71.264,33.41 112.95,33.41Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share フリーランス 2 年目の振り返り on linkedin"
+        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fblog.tsujio.org%2fposts%2f2022-12-29%2f&amp;title=%e3%83%95%e3%83%aa%e3%83%bc%e3%83%a9%e3%83%b3%e3%82%b9%202%20%e5%b9%b4%e7%9b%ae%e3%81%ae%e6%8c%af%e3%82%8a%e8%bf%94%e3%82%8a&amp;summary=%e3%83%95%e3%83%aa%e3%83%bc%e3%83%a9%e3%83%b3%e3%82%b9%202%20%e5%b9%b4%e7%9b%ae%e3%81%ae%e6%8c%af%e3%82%8a%e8%bf%94%e3%82%8a&amp;source=https%3a%2f%2fblog.tsujio.org%2fposts%2f2022-12-29%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share フリーランス 2 年目の振り返り on reddit"
+        href="https://reddit.com/submit?url=https%3a%2f%2fblog.tsujio.org%2fposts%2f2022-12-29%2f&title=%e3%83%95%e3%83%aa%e3%83%bc%e3%83%a9%e3%83%b3%e3%82%b9%202%20%e5%b9%b4%e7%9b%ae%e3%81%ae%e6%8c%af%e3%82%8a%e8%bf%94%e3%82%8a">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share フリーランス 2 年目の振り返り on facebook"
+        href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fblog.tsujio.org%2fposts%2f2022-12-29%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share フリーランス 2 年目の振り返り on whatsapp"
+        href="https://api.whatsapp.com/send?text=%e3%83%95%e3%83%aa%e3%83%bc%e3%83%a9%e3%83%b3%e3%82%b9%202%20%e5%b9%b4%e7%9b%ae%e3%81%ae%e6%8c%af%e3%82%8a%e8%bf%94%e3%82%8a%20-%20https%3a%2f%2fblog.tsujio.org%2fposts%2f2022-12-29%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-58.673,127.703c-33.842,-33.881 -78.847,-52.548 -126.798,-52.568c-98.799,0 -179.21,80.405 -179.249,179.234c-0.013,31.593 8.241,62.428 23.927,89.612l-25.429,92.884l95.021,-24.925c26.181,14.28 55.659,21.807 85.658,21.816l0.074,0c98.789,0 179.206,-80.413 179.247,-179.243c0.018,-47.895 -18.61,-92.93 -52.451,-126.81Zm-126.797,275.782l-0.06,0c-26.734,-0.01 -52.954,-7.193 -75.828,-20.767l-5.441,-3.229l-56.386,14.792l15.05,-54.977l-3.542,-5.637c-14.913,-23.72 -22.791,-51.136 -22.779,-79.287c0.033,-82.142 66.867,-148.971 149.046,-148.971c39.793,0.014 77.199,15.531 105.329,43.692c28.128,28.16 43.609,65.592 43.594,105.4c-0.034,82.149 -66.866,148.983 -148.983,148.984Zm81.721,-111.581c-4.479,-2.242 -26.499,-13.075 -30.604,-14.571c-4.105,-1.495 -7.091,-2.241 -10.077,2.241c-2.986,4.483 -11.569,14.572 -14.182,17.562c-2.612,2.988 -5.225,3.364 -9.703,1.12c-4.479,-2.241 -18.91,-6.97 -36.017,-22.23c-13.314,-11.876 -22.304,-26.542 -24.916,-31.026c-2.612,-4.484 -0.279,-6.908 1.963,-9.14c2.016,-2.007 4.48,-5.232 6.719,-7.847c2.24,-2.615 2.986,-4.484 4.479,-7.472c1.493,-2.99 0.747,-5.604 -0.374,-7.846c-1.119,-2.241 -10.077,-24.288 -13.809,-33.256c-3.635,-8.733 -7.327,-7.55 -10.077,-7.688c-2.609,-0.13 -5.598,-0.158 -8.583,-0.158c-2.986,0 -7.839,1.121 -11.944,5.604c-4.105,4.484 -15.675,15.32 -15.675,37.364c0,22.046 16.048,43.342 18.287,46.332c2.24,2.99 31.582,48.227 76.511,67.627c10.685,4.615 19.028,7.371 25.533,9.434c10.728,3.41 20.492,2.929 28.209,1.775c8.605,-1.285 26.499,-10.833 30.231,-21.295c3.732,-10.464 3.732,-19.431 2.612,-21.298c-1.119,-1.869 -4.105,-2.99 -8.583,-5.232Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share フリーランス 2 年目の振り返り on telegram"
+        href="https://telegram.me/share/url?text=%e3%83%95%e3%83%aa%e3%83%bc%e3%83%a9%e3%83%b3%e3%82%b9%202%20%e5%b9%b4%e7%9b%ae%e3%81%ae%e6%8c%af%e3%82%8a%e8%bf%94%e3%82%8a&amp;url=https%3a%2f%2fblog.tsujio.org%2fposts%2f2022-12-29%2f">
+        <svg version="1.1" xml:space="preserve" viewBox="2 2 28 28" height="30px" width="30px" fill="currentColor">
+            <path
+                d="M26.49,29.86H5.5a3.37,3.37,0,0,1-2.47-1,3.35,3.35,0,0,1-1-2.47V5.48A3.36,3.36,0,0,1,3,3,3.37,3.37,0,0,1,5.5,2h21A3.38,3.38,0,0,1,29,3a3.36,3.36,0,0,1,1,2.46V26.37a3.35,3.35,0,0,1-1,2.47A3.38,3.38,0,0,1,26.49,29.86Zm-5.38-6.71a.79.79,0,0,0,.85-.66L24.73,9.24a.55.55,0,0,0-.18-.46.62.62,0,0,0-.41-.17q-.08,0-16.53,6.11a.59.59,0,0,0-.41.59.57.57,0,0,0,.43.52l4,1.24,1.61,4.83a.62.62,0,0,0,.63.43.56.56,0,0,0,.4-.17L16.54,20l4.09,3A.9.9,0,0,0,21.11,23.15ZM13.8,20.71l-1.21-4q8.72-5.55,8.78-5.55c.15,0,.23,0,.23.16a.18.18,0,0,1,0,.06s-2.51,2.3-7.52,6.8Z" />
+        </svg>
+    </a>
+</div>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>© <a href="https://www.tsujio.org">辻尾研</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
